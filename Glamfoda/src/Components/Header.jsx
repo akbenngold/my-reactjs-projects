@@ -3,6 +3,7 @@ import {
   HeartIcon,
   ShoppingBagIcon,
   ShoppingCartIcon,
+  Bars3Icon,
 } from "@heroicons/react/24/outline";
 
 function Header() {
@@ -13,7 +14,7 @@ function Header() {
         <NavLink to="/">
           <ShoppingBagIcon />
         </NavLink>
-        <h1 className="header__logo-name">Glamfoda</h1>
+        <h1 className="header__logo-name">Glamfoda.</h1>
       </div>
       {/* navigation */}
       <div className="header__nav">
@@ -23,16 +24,19 @@ function Header() {
         <NavLink to="/kids">Kids</NavLink>
       </div>{" "}
       {/* cart */}
-      <div className="header__nav-side">
-        <div className="header__navicon">
+      <div className="header__cart">
+        <div className="header__cart-icon">
           <HeartIcon />
-          <span className="header__navicon-label">1</span>
+          <span className="header__cart-label">1</span>
         </div>
-        <div className="header__navicon">
+        <div className="header__cart-icon">
           <NavLink to="/cart">
             <ShoppingCartIcon />
           </NavLink>
-          <span className="header__navicon-label">1</span>
+          <span className="header__cart-label">1</span>
+        </div>
+        <div className="header__bars">
+          <Bars3Icon />
         </div>
       </div>
     </div>

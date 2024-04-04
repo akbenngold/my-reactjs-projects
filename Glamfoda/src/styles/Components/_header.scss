@@ -1,7 +1,69 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  padding: 2rem;
 
   &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 4rem;
+      color: black;
+    }
+  }
+
+  &__nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 3rem;
+    top: 4rem;
+    right: 4rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    gap: 3rem;
+
+    &-icon {
+      width: 3rem;
+      position: relative;
+
+      a {
+        color: black;
+      }
+    }
+
+    &-label {
+      position: absolute;
+      background-color: red;
+      font-weight: bold;
+      width: 1.6rem;
+      height: 1.6rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      top: -0.5rem;
+      right: -20%;
+    }
+  }
+
+  &__bars {
+    width: 3rem;
+    margin-left: 3rem;
   }
 }

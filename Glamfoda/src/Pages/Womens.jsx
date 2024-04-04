@@ -1,7 +1,12 @@
 import React from "react";
+import Main from "../Components/Main";
 
 function Womens() {
-  return <div>Womens</div>;
+  return (
+    <div>
+      <Main banner="check out our womens collection" />
+    </div>
+  );
 }
 
 export default Womens;
